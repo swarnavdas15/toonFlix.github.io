@@ -1,0 +1,156 @@
+.Trending{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-top: 25px solid #1e2a366b;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: var(--bgcolor);
+}
+.trending-title h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+table{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95vw;
+    height: auto;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 80vh;
+    gap:20px ;
+    justify-content: center;
+}
+table tr{
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    gap: 25px;
+    background-color: #1e2a366b;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+ 
+}
+.movie-card{
+   width: 10vw;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: flex-start; 
+   filter: brightness(0.8) contrast(0.95);
+ }
+ h2{
+    text-shadow: -4px 7px #e0d9d9;
+    color: #512860;
+    transform: translateX(-5px) translateY(23px);
+    font-size: 15vh;
+ }
+.movie-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.movie1{
+    background-image: url(../UniversialResource/Movie1.jpg); 
+}
+.movie2{
+    background-image: url(../UniversialResource/Movie2.jpg);
+}
+
+.movie3{
+    background-image: url(../UniversialResource/movie3.jpg);
+}
+.movie4{
+    background-image: url(../UniversialResource/movie4.jpg);
+}
+.movie5{
+    background-image: url(../UniversialResource/movie5.jpg);
+}
+.movie6{
+    background-image: url(../UniversialResource/movie6.jpg);
+}
+.movie7{
+    background-image: url(../UniversialResource/movie7.jpg);
+}
+.movie8{
+    background-image: url(../UniversialResource/movie8.webp);
+}
+.movie9{
+    background-image: url(../UniversialResource/movie9.jpg);
+}
+.movie10{
+    background-image: url(../UniversialResource/movie.10.jpg);
+}
+
+.series1{
+    background-image: url(../UniversialResource/series1.jpg);
+}
+.series2{
+    background-image: url(../UniversialResource/series2.jpg);
+}
+.series3{
+    background-image: url(../UniversialResource/series3.jpg);
+}
+.series4{
+    background-image: url(../UniversialResource/series4.jpg);
+}
+.series5{
+    background-image: url(../UniversialResource/series5.jpg);
+}
+.series6{
+    background-image: url(../UniversialResource/series6.jpg);
+}
+.series7{
+    background-image: url(../UniversialResource/series7.jpg);
+}
+.series8{
+    background-image: url(../UniversialResource/series8.jpg);
+}
+.series9{
+    background-image: url(../UniversialResource/series9.jpg);
+}
+.series10{
+    background-image: url(../UniversialResource/series10.jpg);
+}
+.transi {
+    animation: tcolor 5s linear infinite;
+}
+@keyframes tcolor {
+        20%{
+         color: var(--color) ;
+        }
+         80%{
+            color: rgba(239, 199, 20, 0.952);
+         }
+       
+    } 
+@media screen and (max-width: 1000px){
+
+    
+
+    table tr{
+        width: 90vw;
+
+    }
+    .movie-card{
+        width: 40vw;
+    }
+
+
+}
